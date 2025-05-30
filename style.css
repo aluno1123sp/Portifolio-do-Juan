@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Fundo e cores gerais */
+body {
+    background-color: #f8f9fa; /* cor de fundo clara */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho personalizado */
+header {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header img {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #007bff; /* azul Bootstrap */
+}
+
+header p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+header p.lead {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header div p.badge {
+    margin: 5px 10px;
+    font-weight: 600;
+}
+
+/* Estilo para os projetos */
+main h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Cartões */
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Botões */
+.btn {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Personalização do botão "Veja o projeto" */
+.btn-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Espaçamento entre os cartões */
+.mb-4 {
+    margin-bottom: 30px !important;
+}
+
+/* Responsividade adicional, se desejar */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    main h2 {
+        font-size: 1.5rem;
+    }
+}
